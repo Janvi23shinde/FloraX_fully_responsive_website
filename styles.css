@@ -25,9 +25,9 @@ body {
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
-    color: #d14671 !important;
+    color: #b1345b !important;
     text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .bagg {
-    color: #d14671;
+    color: #c53661;
     font-size: 30px;
 }
 
@@ -94,14 +94,14 @@ body {
     padding: 10px 28px;
     border: none;
     border-radius: 30px;
-    background: #d14671;
+    background:  #cb436e;
     color: #fff;
     font-weight: 600;
     transition: 0.3s;
 }
 
 .shop-btn:hover {
-    background: #b92e58;
+    background: #94173d;
 }
 
 @media (min-width: 768px) {
@@ -147,5 +147,124 @@ body {
     .shop-btn {
         width: auto;
         padding: 10px 28px;
+    }
+}
+.dropdown-menu {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.dropdown-item:hover {
+    background: #d14671;
+    color: #0e0d0d;
+}
+
+.logo {
+    opacity: 0;
+    animation: slideLeft .8s ease forwards;
+}
+
+.nav-item {
+    opacity: 0;
+    animation: fadeDown .6s ease forwards;
+}
+
+.nav-item:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.nav-item:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.nav-item:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.nav-item:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.nav-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.right-side {
+    opacity: 0;
+    animation: slideRight .8s ease forwards;
+    animation-delay: 1s;
+}
+
+.shop-btn {
+    transition: .3s;
+}
+
+.shop-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.shop-btn {
+    animation: zoomIn 1s ease;
+}
+
+.bagg:hover {
+    animation: rotate .5s ease;
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
