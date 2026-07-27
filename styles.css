@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffe6ec, #f6d8f7, #e8dcff, #d4e0ff, #c2f0ff);
+}
+
+.navbar {
+    padding: 15px 0;
+    background: transparent !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #d14671 !important;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-nav {
+    gap: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-link {
+    color: #000000 !important;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d14671 !important;
+}
+
+.nav-link.active {
+    color: #d14671 !important;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+    width: 35px;
+    height: 2px;
+    background: #d14671;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.bagg {
+    color: #d14671;
+    font-size: 30px;
+}
+
+.shop-btn {
+    width: 180px;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #d14671;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #b92e58;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .navbar-nav {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .right-side {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .shop-btn {
+        width: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        font-size: 32px;
+    }
+
+    .navbar-nav {
+        gap: 30px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .right-side {
+        margin-top: 0;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shop-btn {
+        width: auto;
+        padding: 10px 28px;
+    }
+}
