@@ -638,23 +638,285 @@ body {
 }
 
 
-.card:hover .card-body,
-.card:active .card-body{
-    background:#fff3f7;
-}
-
-
 .c1{
     transition:0.4s ease;
 }
 
 
-.card:hover .c1,
-.card:active .c1{
-    transform:rotate(90deg);
-    background:#d81b60;
+.card:hover .c1{
+    animation:rotateBtn 0.6s ease;
 }
+
+
+@keyframes rotateBtn{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+.footer {
+
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #fff7fa, #ffffff);
+
+}
+
+.ft {
+
+    background: #ffffff67;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
   
+
+}
+
+.join-title {
+
+    color: #cf3f72;
+    font-size: 42px;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.join-text {
+
+    color: #000000;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+}
+
+.join-form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.email-box {
+
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 20px;
+
+
+}
+
+
+.subscribe-btn {
+
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #cf3f72;
+    color: #fff;
+    font-weight: 600;
+    transition: .3s;
+
+}
+
+.subscribe-btn:hover {
+
+    background: #a72c57;
+
+}
+.card{
+    border:none;
+    border-radius:25px;
+    overflow:hidden;
+    opacity:0;
+    animation:cardShow 1s ease forwards;
+    transition:0.4s ease;
+}
+
+
+.card:nth-child(1){
+    animation-delay:0.2s;
+}
+
+.card:nth-child(2){
+    animation-delay:0.4s;
+}
+
+.card:nth-child(3){
+    animation-delay:0.6s;
+}
+
+
+@keyframes cardShow{
+
+    from{
+        opacity:0;
+        transform:translateY(50px) scale(0.9);
+        box-shadow:0 0 0 rgba(207,63,114,0);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+        box-shadow:0 15px 35px rgba(207,63,114,0.2);
+    }
+
+}
+
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 45px rgba(207,63,114,0.35);
+}
+
+
+.card i{
+    font-size:45px;
+    color:#cf3f72;
+    transition:0.4s ease;
+}
+
+
+.card:hover i{
+    transform:scale(1.2) rotate(8deg);
+}
+
+
+.card h2{
+    color:#bb0b37;
+    font-family:serif;
+    transition:0.3s ease;
+}
+
+
+.card:hover h2{
+    letter-spacing:1px;
+}
+
+
+.subscribe-btn{
+    transition:0.4s ease;
+}
+
+
+.subscribe-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(207,63,114,0.35);
+}
+
+@media (min-width:768px) {
+
+    .ft {
+
+        padding: 50px 40px;
+
+    }
+
+    .join-title {
+
+        font-size: 38px;
+
+    }
+
+    .join-text {
+
+        width: 80%;
+        margin: 20px auto 35px;
+        font-size: 17px;
+        line-height: 28px;
+
+    }
+
+    .join-form {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    .email-box {
+
+        width: 70%;
+        height: 55px;
+        font-size: 16px;
+
+    }
+
+    .subscribe-btn {
+
+        width: 180px;
+        height: 55px;
+        font-size: 16px;
+
+    }
+}
+    
+@media (min-width:992px) {
+
+
+    .ft {
+
+        padding: 10px;
+        border-radius: 30px;
+
+    }
+
+    .join-title {
+
+        font-size: 48px;
+
+    }
+
+    .join-text {
+
+        width: 65%;
+        margin: 20px auto 40px;
+        font-size: 18px;
+        line-height: 32px;
+
+    }
+
+    .join-form {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .email-box {
+
+        width: 420px;
+        height: 60px;
+        font-size: 17px;
+        padding: 0 20px;
+
+    }
+
+    .subscribe-btn {
+
+        width: 180px;
+        height: 60px;
+        font-size: 17px;
+        font-weight: 600;
+
+    }
+}
+
 
 
 
