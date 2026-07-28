@@ -1464,7 +1464,391 @@ body {
     color:#b93557;
     font-weight:600;
 }
+.collection-card{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
 
+.flower-card{
+    width:100%;
+    max-width:350px;
+    height:460px;
+    position:relative;
+    overflow:hidden;
+    border:none;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:.5s ease;
+}
+
+.flower-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 25px 45px rgba(209,70,113,.25);
+}
+
+.flower-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s ease;
+}
+
+.flower-card:hover img{
+    transform:scale(1.08);
+}
+
+.overlay{
+    position:absolute;
+    left:20px;
+    right:20px;
+    bottom:20px;
+    padding:20px;
+    background:rgba(255,255,255,.30);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.5);
+    transition:.5s;
+}
+
+.flower-card:hover .overlay{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.38);
+}
+
+.tag{
+    display:inline-block;
+    background:#ffe4eb;
+    color:#d6336c;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.overlay h5{
+    font-size:26px;
+    color:#222;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.overlay p{
+    font-size:14px;
+    color:#444;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+.order{
+    background:#b0004d;
+    color:#fff;
+    border-radius:30px;
+    padding:10px 22px;
+    transition:.4s;
+    border:none;
+}
+
+.order:hover{
+    background:#5f0227;
+    color:#f8d8e4;
+    transform:translateY(-3px);
+}
+
+@media (max-width:767px){
+
+    .flower-card{
+        max-width:100%;
+        height:400px;
+    }
+
+    .overlay{
+        left:15px;
+        right:15px;
+        bottom:15px;
+        padding:15px;
+    }
+
+    .overlay h5{
+        font-size:22px;
+    }
+
+    .overlay p{
+        font-size:13px;
+    }
+}
+
+@media (min-width:768px){
+
+    .flower-card{
+        height:430px;
+    }
+
+    .overlay h5{
+        font-size:24px;
+    }
+    @media (max-width:991px){
+
+    .flower-card:active{
+        transform:translateY(-10px) scale(.98);
+        box-shadow:0 20px 40px rgba(209,70,113,.30);
+    }
+
+    .flower-card:active img{
+        transform:scale(1.08);
+    }
+
+    .flower-card:active .overlay{
+        transform:translateY(-8px);
+        background:rgba(255,255,255,.40);
+    }
+
+    .order:active{
+        transform:scale(.95);
+        background:#5f0227;
+    }
+
+}
+}
+
+@media (min-width:992px){
+
+    .flower-card{
+        height:500px;
+    }
+
+    .overlay h5{
+        font-size:28px;
+    }
+
+    .overlay p{
+        font-size:15px;
+    }
+}
+.flower-card:active{
+    transform:translateY(-10px) scale(.98);
+    box-shadow:0 20px 40px rgba(209,70,113,.30);
+}
+
+.flower-card:active img{
+    transform:scale(1.08);
+}
+
+.flower-card:active .overlay{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.40);
+}
+
+.order:active{
+    transform:scale(.95);
+    background:#5f0227;
+}
+.flower-card{
+    width:100%;
+    max-width:360px;
+    height:500px;
+    background:#fff;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    transition:.5s ease;
+    position:relative;
+}
+
+.flower-card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 25px 50px rgba(209,70,113,.25);
+}
+
+.flower-card img{
+    width:100%;
+    height:270px;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.flower-card:hover img{
+    transform:scale(1.08);
+}
+
+.flower-content{
+    padding:28px;
+    text-align:center;
+    background:#fff;
+}
+
+.tag{
+    display:inline-block;
+    padding:7px 18px;
+    border-radius:30px;
+    background:#ffe7ef;
+    color:#d14671;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.flower-content h3{
+    font-size:28px;
+    font-family:Georgia,serif;
+    color:#5f0227;
+    margin-bottom:15px;
+}
+
+.flower-content p{
+    font-size:15px;
+    color:#666;
+    line-height:28px;
+    margin-bottom:25px;
+}
+
+.order{
+    display:inline-block;
+    background:linear-gradient(135deg,#d14671,#b0004d);
+    color:#fff;
+    padding:12px 30px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.order:hover{
+    background:linear-gradient(135deg,#b0004d,#7c0037);
+    color:#fff;
+    transform:translateY(-4px);
+}
+
+@media(max-width:767px){
+
+    .flower-card{
+        height:auto;
+    }
+
+    .flower-card img{
+        height:240px;
+    }
+
+    .flower-content{
+        padding:22px;
+    }
+
+    .flower-content h3{
+        font-size:24px;
+    }
+
+}
+
+@media(min-width:768px){
+
+    .flower-card img{
+        height:260px;
+    }
+
+}
+
+@media(min-width:992px){
+
+    .flower-card img{
+        height:280px;
+    }
+
+}
+
+.featured-title{
+    font-size:55px;
+    font-family:Georgia, serif;
+    color:#5f0227;
+    font-weight:bold;
+    margin-bottom:15px;
+    transition:.4s;
+}
+
+.featured-title:hover{
+    color:#d14671;
+    letter-spacing:2px;
+}
+
+.heading-design{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.heading-design span{
+    width:90px;
+    height:3px;
+    background:#d14671;
+    border-radius:20px;
+}
+
+.heading-design i{
+    color:#8b0039;
+    font-size:22px;
+}
+
+.featured-text{
+    max-width:700px;
+    margin:0 auto;
+    color:#555;
+    font-size:18px;
+    line-height:32px;
+    transition:.4s;
+}
+
+.featured-text:hover{
+    color:#222;
+}
+.featured-heading{
+    position: relative;
+    top: 20px;
+}
+
+.collection-row{
+    position: relative;
+    top: 80px;
+}
+
+@media(max-width:767px){
+
+    .featured-title{
+        font-size:36px;
+    }
+
+    .heading-design span{
+        width:50px;
+    }
+
+    .heading-design i{
+        font-size:18px;
+    }
+
+    .featured-text{
+        font-size:16px;
+        line-height:28px;
+    }
+
+}
+.featured-heading{
+    position: relative;
+    top: 40px;
+}
+
+@media (min-width:768px){
+    .featured-heading{
+        top: 60px;
+    }
+}
+
+@media (min-width:992px){
+    .featured-heading{
+        top: 80px;
+    }
+}
 
 
 
