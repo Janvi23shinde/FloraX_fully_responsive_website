@@ -2284,6 +2284,207 @@ img{
     padding-left: 20px;
 }
 
+.care {
+    padding: 70px 0;
+}
+
+.care-tag {
+    display: inline-block;
+    background: #ffe5ec;
+    color: #d6336c;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.care-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.care-text {
+    color: #666;
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.care-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+.care-card{
+    animation:card 1.4s ease;
+}
+
+@keyframes card{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.care-card h2,
+.care-card h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.care-card ul {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.care-card li {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+    background: #fff3d4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tip-box {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.care-card img {
+    width: 100%;
+}
+.pruning {
+    padding: 70px 0;
+}
+
+.pruning-card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.pruning-card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.pruning-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pruning-card h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pruning-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.watch-btn {
+    background: linear-gradient(90deg, #ff5e9a, #d86dff);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 28px;
+    font-weight: 600;
+}
+
+.watch-btn:hover {
+    color: #fff;
+}
+
+@media (min-width:768px) {
+
+    .pruning-card {
+        padding: 35px;
+    }
+
+    .pruning-card h2 {
+        font-size: 2.4rem;
+    }
+
+    .care-title {
+        font-size: 3rem;
+    }
+
+}
+
+@media (min-width:992px) {
+
+    .care-title {
+        font-size: 4rem;
+    }
+
+    .care-card {
+        padding: 35px;
+    }
+
+    .pruning-card {
+        padding: 45px;
+    }
+
+    .pruning-card h2 {
+        font-size: 2.8rem;
+    }
+
+}
+
+.gift-hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #fff6f7, #ffffff);
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-tag {
+    color: #d44f71;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.hero-tag{
+    animation:tag 1s ease;
+}
+
+@keyframes tag{
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
 
 
 
