@@ -2696,6 +2696,440 @@ img{
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,.18);
 }
+.marg {
+    margin: 20px;
+    position: relative;
+    left: -10px;
+}
+
+.about-section {
+    padding: 80px 0;
+}
+
+.about-tag {
+    color: #c94870;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: tag 1s ease;
+}
+
+@keyframes tag {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-heading {
+    font-size: 55px;
+    font-family: Georgia, serif;
+    color: #5f0227;
+    margin: 20px 0;
+    animation: heading 1.2s ease;
+}
+
+@keyframes heading {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-heading span {
+    color: #c94870;
+    font-style: italic;
+}
+
+.about-text {
+    color: #666;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    animation: text 1.4s ease;
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-weight: 600;
+    animation: info 1.5s ease;
+}
+
+@keyframes info {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.info-item i {
+    color: #c94870;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    animation: image 1.6s ease;
+}
+
+@keyframes image {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.our {
+    height: 300px;
+}
+
+.growth {
+    padding: 60px 0;
+}
+
+.growth h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    animation: growth 1.2s ease;
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.growth p {
+    color: #000;
+}
+
+.growth .row {
+    position: relative;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    animation: dot 1.5s ease;
+}
+
+@keyframes dot {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pink {
+    background: #e91e63;
+}
+
+.purple {
+    background: #7b2cbf;
+}
+
+.red {
+    background: #d90429;
+}
+
+.year {
+    font-size: 30px;
+    font-weight: bold;
+    animation: year 1.5s ease;
+}
+
+@keyframes year {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.growth h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.artisans {
+    padding: 60px 0;
+}
+
+.artisans h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.artisans p {
+    color: #666;
+}
+
+.team-link {
+    text-decoration: none;
+    color: #b8325c;
+    font-weight: 600;
+}
+
+.artisan-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    transition: .3s;
+    animation: artisan 1.6s ease;
+}
+
+@keyframes artisan {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.artisan-card:hover {
+    transform: translateY(-8px);
+}
+
+.artisan-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.artisan-content {
+    padding: 20px;
+}
+
+.artisan-content h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.artisan-content h6 {
+    color: #b8325c;
+    font-size: 13px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.artisan-content p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.ft {
+    background: #fff6f7;
+    padding: 60px 30px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.join-title {
+    font-size: 42px;
+    color: #5f0227;
+    font-family: Georgia, serif;
+}
+
+.join-text {
+    color: #666;
+    margin: 20px auto 35px;
+    max-width: 600px;
+}
+
+.join-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.email-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    outline: none;
+}
+
+.subscribe-btn {
+    background: #c94870;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.subscribe-btn:hover {
+    background: #a93258;
+}
+
+.footer {
+    background: #e6e6e6;
+    color: #090909;
+    padding: 60px 0 20px;
+}
+
+.foot-logo {
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+.foot-text {
+    color: #121111;
+}
+
+.foot-head {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.foot-list {
+    list-style: none;
+    padding: 0;
+}
+
+.foot-list li {
+    margin-bottom: 10px;
+}
+
+.foot-list a {
+    color: #1e1c1c;
+    text-decoration: none;
+}
+
+.foot-list a:hover {
+    color: #1d1010;
+}
+
+.social a {
+    color: #69264f;
+    background-color:#dd5781a2;;
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+.copy {
+    text-align: center;
+    color: #040404;
+    padding-top: 10px;
+}
+
+@media (min-width:768px) {
+    .about-heading {
+        font-size: 46px;
+    }
+
+    .growth .row::before {
+        display: block;
+    }
+}
+
+@media (min-width:992px) {
+    .about-heading {
+        font-size: 60px;
+    }
+
+    .about-img {
+        max-width: 500px;
+    }
+
+    .growth h2 {
+        font-size: 2.5rem;
+    }
+
+    .growth h4 {
+        font-size: 28px;
+    }
+
+    .growth p {
+        font-size: 16px;
+    }
+
+    .artisans h2 {
+        font-size: 2.6rem;
+    }
+
+    .artisan-card img {
+        height: 400px;
+    }
+
+    .artisan-content {
+        padding: 25px;
+    }
+
+    .join-title {
+        font-size: 52px;
+    }
+}
 
 
 
